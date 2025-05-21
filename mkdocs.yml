@@ -1,0 +1,18 @@
+site_name: DocGen.AI Documentation
+theme:
+  name: material
+  palette:
+    scheme: slate  # dark mode default
+nav:
+  - Home: index.md
+  - Features: features.md
+  - Architecture: architecture.md
+  - Setup: setup.md
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+extra_css:
+  - stylesheets/custom-admonitions.css
+extra_javascript:
+  - javascripts/auto-play-video.js
