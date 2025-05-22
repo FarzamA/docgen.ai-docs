@@ -27,7 +27,7 @@ It supports:
 
 ## 📷 Demo
 
-??? sparkles "Live Demo Preview"
+??? message-circle-more "Live Demo Preview"
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
         <video 
             src="media/mp4/docgen_demo.mp4" 

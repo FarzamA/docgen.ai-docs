@@ -9,19 +9,19 @@ DocGen.AI provides a secure and seamless authentication system with support for:
 ??? o-auth "OAuth login via Google, Facebook, or Github"
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
         <video 
-            src="./../media/mp4/login_modal_btc.mp4" 
+            src="./../media/mp4/login_screen_docgen.mp4" 
             autoplay 
             muted 
             playsinline 
             loop 
-            style="max-width: 400px; border-radius: 12px;">
+            style="max-width: 100%; border-radius: 12px;">
         </video>
     </div>
 
-??? e-mail-registration "Email-based registration with background loading screen"  
+??? e-mail-registration "Email-based registration"  
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
         <video 
-            src="./../media/mp4/email_signup_btc.mp4" 
+            src="./../media/mp4/docgen_registration.mp4" 
             autoplay 
             muted 
             playsinline 
@@ -33,19 +33,7 @@ DocGen.AI provides a secure and seamless authentication system with support for:
 ??? e-mail-verification "Email verification for user to be activated "  
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
         <video 
-            src="./../media/mp4/email_verification_btc.mp4" 
-            autoplay 
-            muted 
-            playsinline 
-            loop 
-            style="max-width: 100%; border-radius: 12px;">
-        </video>
-    </div>
-
-??? user-login "Username based login"  
-    <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
-        <video 
-            src="./../media/mp4/username_login_btc.mp4" 
+            src="./../media/mp4/docgen_email_verification.mp4" 
             autoplay 
             muted 
             playsinline 
@@ -57,7 +45,7 @@ DocGen.AI provides a secure and seamless authentication system with support for:
 ??? qr-code "Two-Factor Authentication (2FA) for enhanced security (optional)"  
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
         <video 
-            src="./../media/mp4/2fa_setup_btc.mp4" 
+            src="./../media/mp4/docgen_2fa.mp4" 
             autoplay 
             muted 
             playsinline 
@@ -69,7 +57,7 @@ DocGen.AI provides a secure and seamless authentication system with support for:
 ??? e-mail-verification "Email-based password reset"  
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
         <video 
-            src="./../media/mp4/forgot_pass_btc.mp4" 
+            src="./../media/mp4/docgen_email_pwd_reset.mp4" 
             autoplay 
             muted 
             playsinline 
@@ -84,11 +72,11 @@ DocGen.AI provides a secure and seamless authentication system with support for:
 
 - DocGen.AI connects to your codebase or documentation context.
 - Users can chat with an LLM to generate unit tests, inline documentation, or ask questions about code behavior.
-- You can either connect a GitHub repo, upload a file, or chat with a blank model.
+- You can either connect a GitHub repo or chat with a blank model.
 - The system streams results in real time and provides copyable output.
 - If no codebase is loaded, DocGen.AI defaults to chat-only mode for exploration and experimentation.
 
-??? rocket "Interactive AI Workspace Demo"
+??? message-circle-more "Interactive AI Workspace Demo"
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;"> <video src="./../media/mp4/codegen_demo.mp4" autoplay muted playsinline loop style="max-width: 100%; border-radius: 12px;"> </video> </div>
 
 ---
