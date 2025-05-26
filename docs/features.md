@@ -8,62 +8,72 @@ DocGen.AI provides a secure and seamless authentication system with support for:
 
 ??? o-auth "OAuth login via Google, Facebook, or Github"
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
-        <video 
-            src="./../media/mp4/login_screen_docgen.mp4" 
-            autoplay 
-            muted 
-            playsinline 
-            loop 
-            style="max-width: 100%; border-radius: 12px;">
-        </video>
+        <a href="./../media/mp4/login_screen_docgen.mp4" class="glightbox" data-type="video">
+            <video 
+                src="./../media/mp4/login_screen_docgen.mp4" 
+                autoplay 
+                muted 
+                playsinline 
+                loop 
+                style="max-width: 100%; border-radius: 12px;">
+            </video>
+        </a>
     </div>
 
 ??? e-mail-registration "Email-based registration"  
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
-        <video 
-            src="./../media/mp4/docgen_registration.mp4" 
-            autoplay 
-            muted 
-            playsinline 
-            loop 
-            style="max-width: 100%; border-radius: 12px;">
-        </video>
+        <a href="./../media/mp4/docgen_registration.mp4" class="glightbox" data-type="video">
+            <video 
+                src="./../media/mp4/docgen_registration.mp4" 
+                autoplay 
+                muted 
+                playsinline 
+                loop 
+                style="max-width: 100%; border-radius: 12px;">
+            </video>
+        </a>
     </div>
 
 ??? e-mail-verification "Email verification for user to be activated "  
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
-        <video 
-            src="./../media/mp4/docgen_email_verification.mp4" 
-            autoplay 
-            muted 
-            playsinline 
-            loop 
-            style="max-width: 100%; border-radius: 12px;">
-        </video>
+        <a href="./../media/mp4/docgen_email_verification.mp4" class="glightbox" data-type="video">
+            <video 
+                src="./../media/mp4/docgen_email_verification.mp4" 
+                autoplay 
+                muted 
+                playsinline 
+                loop 
+                style="max-width: 100%; border-radius: 12px;">
+            </video>
+        </a>
     </div>
 
 ??? qr-code "Two-Factor Authentication (2FA) for enhanced security (optional)"  
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
-        <video 
-            src="./../media/mp4/docgen_2fa.mp4" 
-            autoplay 
-            muted 
-            playsinline 
-            loop 
-            style="max-width: 100%; border-radius: 12px;">
-        </video>
+        <a href="./../media/mp4/docgen_2fa.mp4" class="glightbox" data-type="video">
+            <video 
+                src="./../media/mp4/docgen_2fa.mp4" 
+                autoplay 
+                muted 
+                playsinline 
+                loop 
+                style="max-width: 100%; border-radius: 12px;">
+            </video>
+        </a>
     </div>
 
 ??? e-mail-verification "Email-based password reset"  
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
-        <video 
-            src="./../media/mp4/docgen_email_pwd_reset.mp4" 
-            autoplay 
-            muted 
-            playsinline 
-            loop 
-            style="max-width: 100%; border-radius: 12px;">
-        </video>
+        <a href="./../media/mp4/docgen_email_pwd_reset.mp4" class="glightbox" data-type="video">
+            <video 
+                src="./../media/mp4/docgen_email_pwd_reset.mp4" 
+                autoplay 
+                muted 
+                playsinline 
+                loop 
+                style="max-width: 100%; border-radius: 12px;">
+            </video>
+        </a>
     </div>
 
 ---
@@ -77,7 +87,18 @@ DocGen.AI provides a secure and seamless authentication system with support for:
 - If no codebase is loaded, DocGen.AI defaults to chat-only mode for exploration and experimentation.
 
 ??? message-circle-more "Interactive AI Workspace Demo"
-    <div style="display: flex; justify-content: center; margin: 1.5rem 0;"> <video src="./../media/mp4/codegen_demo.mp4" autoplay muted playsinline loop style="max-width: 100%; border-radius: 12px;"> </video> </div>
+    <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
+        <a href="./../media/mp4/docgen_demo.mp4" class="glightbox" data-type="video">
+            <video 
+                src="./../media/mp4/docgen_demo.mp4"
+                autoplay
+                muted
+                playsinline
+                loop s
+                tyle="max-width: 100%; border-radius: 12px;">
+            </video>
+        </a>
+    </div>
 
 ---
 
@@ -94,42 +115,25 @@ DocGen.AI offers guest sessions for quick testing or onboarding:
 
 ## 🖥️ Main Interface
 
-After logging in, users land in a responsive workspace designed for productivity and model experimentation.
+Once logged in, users are welcomed into a responsive, modern workspace built for seamless interaction and model experimentation.
 
-??? sun-moon "Sleek dark and light mode themes for visual flexibility"
-    <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
-        <video 
-            src="./../media/mp4/dark_mode_demo_btc.mp4" 
-            autoplay 
-            muted 
-            playsinline 
-            loop 
-            style="max-width: 100%; border-radius: 12px;">
-        </video>
-    </div>
+- Toggle between sleek dark and light themes for a personalized experience
+- Intuitive dashboards to browse installed models and codebases
+- Real-time charts and usage metrics for insight into model/codebase activity
+- Full chat management: rename, edit, and delete conversations effortlessly
 
-??? chart-line "Chat-based model interface for documentation, tests, and Q&A"
+??? wrench "Demo"
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
-        <video 
-            src="./../media/mp4/chart_demo.mp4" 
-            autoplay 
-            muted 
-            playsinline 
-            loop 
-            style="max-width: 100%; border-radius: 12px;">
-        </video>
-    </div>
-
-??? message-circle-more "Support for chatting with or without a loaded codebase"
-    <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
-        <video 
-            src="./../media/mp4/live_chat_demo.mp4" 
-            autoplay 
-            muted 
-            playsinline 
-            loop 
-            style="max-width: 400px; border-radius: 12px;">
-        </video>
+        <a href="./../media/mp4/full_interface_demo.mp4" class="glightbox" data-type="video">
+            <video 
+                src="./../media/mp4/full_interface_demo.mp4" 
+                autoplay 
+                muted 
+                playsinline 
+                loop 
+                style="max-width: 100%; border-radius: 12px;">
+            </video>
+        </a>
     </div>
 
 ---
@@ -143,18 +147,6 @@ The code generation panel allows you to request:
 - Refactored or simplified code
 - JSDoc or docstring templates
 
-??? banknote "Code + Test Generation Demo"
-    <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
-        <video 
-            src="./../media/mp4/betting_interface_demo.mp4" 
-            autoplay 
-            muted 
-            playsinline 
-            loop 
-            style="max-width: 100%; border-radius: 12px;">
-        </video>
-    </div>
-
 ---
 
 ## 📂 Codebase + Chunking Interface
@@ -166,7 +158,7 @@ Users can connect external repositories or upload local projects for embedding. 
 - Displays loading state and import logs
 - Supports reprocessing individual files for updates
 
-??? receipt "Embedding + Chunking Demo"
+<!-- ??? receipt "Embedding + Chunking Demo"
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
         <video 
             src="./../media/mp4/all_bets_demo.mp4" 
@@ -176,7 +168,7 @@ Users can connect external repositories or upload local projects for embedding. 
             loop 
             style="max-width: 100%; border-radius: 12px;">
         </video>
-    </div>
+    </div> -->
 
 ---
 
@@ -190,7 +182,7 @@ DocGen.AI is designed for privacy-first use cases:
 - Ideal for internal company projects and enterprise security needs
 Together, these features ensure that trust is not assumed—it’s *provable*.
 
-??? lock "Local Deployment with Ollama + GPU Support"
+<!-- ??? lock "Local Deployment with Ollama + GPU Support"
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
         <video 
             src="./../media/mp4/provable_fairness.mp4" 
@@ -200,7 +192,7 @@ Together, these features ensure that trust is not assumed—it’s *provable*.
             loop 
             style="max-width: 100%; border-radius: 12px;">
         </video>
-    </div>
+    </div> -->
 
 ---
 
@@ -228,5 +220,5 @@ To maintain a secure and controlled environment:
 
 This ensures that the system maintains model consistency and avoids unintentional overload of the host machine.
 
-??? bot "Model Overview + Pulling Interface"
-    <div style="display: flex; justify-content: center; margin: 1.5rem 0;"> <video src="./../media/mp4/model_dashboard_demo.mp4" autoplay muted playsinline loop style="max-width: 100%; border-radius: 12px;"> </video> </div>
+<!-- ??? bot "Model Overview + Pulling Interface"
+    <div style="display: flex; justify-content: center; margin: 1.5rem 0;"> <video src="./../media/mp4/model_dashboard_demo.mp4" autoplay muted playsinline loop style="max-width: 100%; border-radius: 12px;"> </video> </div> -->

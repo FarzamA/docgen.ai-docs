@@ -29,14 +29,16 @@ It supports:
 
 ??? message-circle-more "Live Demo Preview"
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
-        <video 
-            src="media/mp4/docgen_demo.mp4" 
-            autoplay 
-            muted 
-            playsinline 
-            loop 
-            style="max-width: 100%; border-radius: 12px;">
-        </video>
+        <a href="media/mp4/docgen_demo.mp4" class="glightbox" data-type="video">
+            <video 
+                src="media/mp4/docgen_demo.mp4" 
+                autoplay 
+                muted 
+                playsinline 
+                loop 
+                style="max-width: 100%; border-radius: 12px;">
+            </video>
+        </a>
     </div>
 
 ---
