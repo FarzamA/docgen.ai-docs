@@ -1,34 +1,46 @@
 # ⚙️ Setup Instructions
 
-> NOTE: This documentation is for demonstration purposes only. The source code for DocGen.AI is currently private.
+> NOTE: The DocGen.AI source code is currently private. This page describes how the stack is run, for reference.
 
-## Requirements
+## Using the live demo
+
+1. Open [docgen.4zam.dev](https://docgen.4zam.dev/login) and continue as a guest.
+2. Click **API keys** and add a key for at least one provider:
+    - OpenAI: platform.openai.com/api-keys
+    - Anthropic: console.anthropic.com
+    - Google Gemini: aistudio.google.com/apikey
+3. Start a new chat, pick a provider and model and ask away.
+
+Keys stay in your browser (cleared when the tab closes unless you choose "Remember on this device") and are removed when you log out.
+
+## Requirements (self-hosting)
 
 - Docker + Docker Compose
-- Ollama installed locally or running via container
-- Redis (used by ARQ for background tasks)
-- Python 3.11+ (for FastAPI and local dev mode)
+- A CPU-only host is enough: LLM inference runs at the providers and embeddings use a small CPU model
 
-## Local Deployment (Recommended)
-
-To spin up the full stack locally with GPU-enabled LLMs and real-time embedding:
+## Production stack
 
 ```bash
-git clone https://github.com/FarzamA/DocGen.AI
-cd docgen.ai
-docker compose up --build
+cp .env.example .env    # fill in POSTGRES_PASSWORD, SECRET_KEY, BASE_URL and CORS_ORIGINS
+docker compose -f docker-compose.prod.yml -p docgen up -d --build
 ```
 
-This will launch:
+This launches PostgreSQL (pgvector), Redis, a CPU Ollama for embeddings, the FastAPI backend with its background workers plus a one-shot frontend build served by the host Caddy. Every service restarts automatically after a reboot.
 
-- The React frontend (Vite + ShadCN)
-- FastAPI backend
-- Ollama model server
-- Redis (for background jobs with ARQ)
-- Caddy reverse proxy (serves all apps under one domain)
+## Environment variables
+
+| Variable | Purpose |
+|---|---|
+| `POSTGRES_USER`, `POSTGRES_PASSWORD`, `POSTGRES_DB` | Database credentials |
+| `SECRET_KEY` | Session signing |
+| `BASE_URL`, `CORS_ORIGINS` | Public origin of the app |
+| `REDIS_URL`, `OLLAMA_HOST` | Internal service addresses (set by the compose file) |
+| `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, `GEMINI_API_KEY` | Optional server-side fallback keys, empty by default. Guests never use them |
+| `SERVER_KEY_DAILY_LIMIT` | Daily message allowance per registered user on the server keys |
+| `DOCGEN_API_PORT` | Port the API binds on 127.0.0.1 |
+
+Leaving the provider keys empty is the safe default: every user brings their own key.
 
 ## Notes
 
-- GPU support for Ollama is enabled by default; ensure your NVIDIA drivers and CUDA are installed.
-- `.env` file is required in the root directory for configs and Redis connection.
-- For code access, licensing, or enterprise deployment inquiries, please contact the author directly.
+- For code access, licensing or deployment inquiries, please contact the author directly.
