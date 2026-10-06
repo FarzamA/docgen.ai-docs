@@ -4,7 +4,7 @@ Welcome to the public documentation for **DocGen.AI** — a modern, local-first 
 
 📌 **Note:** This project is home-hosted. The live demo is generally available **Monday - Friday between 9 AM and 5 PM EST**. If the link is temporarily down, please refer to this documentation for an overview of features, setup, and usage.
 
-👉 [Live Demo](https://docgenai.duckdns.org/login)
+👉 [Live Demo](https://docgen.4zam.dev/login)
 <span id="app-status-indicator">Checking...</span>
 
 ---

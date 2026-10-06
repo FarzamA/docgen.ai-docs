@@ -22,7 +22,7 @@ jobs:
         run: |
           mkdir -p status
           echo "Checked: $(date -u)" > status/status.txt
-          curl -Is https://docgenai.duckdns.org/login | head -n 1 >> status/status.txt
+          curl -Is https://docgen.4zam.dev/login | head -n 1 >> status/status.txt
 
       - name: Commit and push
         env:
