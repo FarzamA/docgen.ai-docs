@@ -1,11 +1,11 @@
 # DocGen.AI
 
-Welcome to the public documentation for **DocGen.AI** — a modern, local-first generative AI tool for automatic **codebase documentation**, **unit test generation**, and **context-aware Q&A**.
-
-📌 **Note:** This project is home-hosted. The live demo is generally available **Monday - Friday between 9 AM and 5 PM EST**. If the link is temporarily down, please refer to this documentation for an overview of features, setup, and usage.
+Welcome to the public documentation for **DocGen.AI**, a generative AI workspace for **codebase documentation**, **unit test generation** and **context-aware Q&A** over your code.
 
 👉 [Live Demo](https://docgen.4zam.dev/login)
 <span id="app-status-indicator">Checking...</span>
+
+The demo runs on a dedicated server at **docgen.4zam.dev** and is online around the clock. Bring your own API key from OpenAI, Anthropic or Google Gemini to chat.
 
 ---
 
@@ -15,13 +15,12 @@ DocGen.AI is a developer-facing tool designed to streamline onboarding and docum
 
 It supports:
 
-- 🧠 **Generative AI** for documentation and test generation
-- 📂 Secure, local embedding of codebases using open-source models (via Ollama)
+- 🧠 **Multi-provider generative AI**: pick OpenAI, Anthropic or Google Gemini and any of their current models for docs, tests and Q&A
+- 🔑 **Bring your own key**: one key per provider, stored only in your browser and never saved or logged by the server
+- 📂 **Retrieval over your code**: repositories are chunked and embedded (pgvector) so answers draw on the relevant code
 - 🧪 Unit test scaffolding for existing code
-- 🔍 Q&A over your project files — even without uploading code
-- 🔐 SSO authentication with Google, GitHub, Facebook, and Email
-- 🌐 Beautiful modern UI with support for dark/light modes
-- 🧱 Dockerized backend + GPU acceleration for inference
+- 👤 Instant guest sessions (unified sign-in through 4zam accounts is coming soon)
+- 🌐 A modern UI with dark and light modes
 
 ---
 

@@ -4,9 +4,12 @@
 
 ## 🔐 Authentication
 
+!!! note "Sign-in update"
+    The live demo currently offers **guest sessions only** while accounts move to unified sign-in through **4zam accounts** (coming soon). The flows below show the existing account system.
+
 DocGen.AI provides a secure and seamless authentication system with support for:
 
-??? o-auth "OAuth login via Google, Facebook, or Github"
+??? o-auth "OAuth login via Google, Facebook or GitHub"
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
         <a href="./../media/mp4/login_screen_docgen.mp4" class="glightbox" data-type="video">
             <video 
@@ -81,7 +84,7 @@ DocGen.AI provides a secure and seamless authentication system with support for:
 ## 🧠 How It Works
 
 - DocGen.AI connects to your codebase or documentation context.
-- Users can chat with an LLM to generate unit tests, inline documentation, or ask questions about code behavior.
+- Users can chat with an LLM to generate unit tests, inline documentation or ask questions about code behavior.
 - You can either connect a GitHub repo or chat with a blank model.
 - The system streams results in real time and provides copyable output.
 - If no codebase is loaded, DocGen.AI defaults to chat-only mode for exploration and experimentation.
@@ -120,7 +123,7 @@ Once logged in, users are welcomed into a responsive, modern workspace built for
 - Toggle between sleek dark and light themes for a personalized experience
 - Intuitive dashboards to browse installed models and codebases
 - Real-time charts and usage metrics for insight into model/codebase activity
-- Full chat management: rename, edit, and delete conversations effortlessly
+- Full chat management: rename, edit and delete conversations effortlessly
 
 ??? wrench "Demo"
     <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
@@ -172,40 +175,27 @@ Users can connect external repositories or upload local projects for embedding. 
 
 ---
 
-## 🔐 Privacy + Local-First Deployment
+## 🔑 Bring Your Own Key
 
-DocGen.AI is designed for privacy-first use cases:
+DocGen.AI works with your own provider account, so you stay in control of cost and data:
 
-- All processing can be done locally or in a containerized environment
-- Supports Ollama and other LLM backends for offline LLM inference  
-- Codebases never leave your machine in local mode 
-- Ideal for internal company projects and enterprise security needs
-Together, these features ensure that trust is not assumed—it’s *provable*.
-
-<!-- ??? lock "Local Deployment with Ollama + GPU Support"
-    <div style="display: flex; justify-content: center; margin: 1.5rem 0;">
-        <video 
-            src="./../media/mp4/provable_fairness.mp4" 
-            autoplay 
-            muted 
-            playsinline 
-            loop 
-            style="max-width: 100%; border-radius: 12px;">
-        </video>
-    </div> -->
+- Choose **OpenAI**, **Anthropic** or **Google Gemini**, then any of their current models
+- Store one API key per provider, only in your browser
+- Keys are sent over HTTPS with your chat requests for that provider and are never saved or logged on the server
+- Clear errors tell you exactly what went wrong: a rejected key, a rate limit or quota, a model your key cannot use
+- With no key, the app still works and shows a friendly prompt to add one
 
 ---
 
 ## 🧠 Models
 
-DocGen.AI supports multiple generative models via a modular architecture. Models can be used for chat, test generation, documentation, and search — with flexible backend integration via Ollama, OpenAI, or other compatible APIs.
+DocGen.AI supports multiple generative models through a provider adapter layer. The model list and each model's parameter rules come from a shared provider catalog, so requests only carry settings the model accepts (for example, newer reasoning models reject `temperature`).
 
-Key features include:
+- **OpenAI**: GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna, GPT-5.6 Sol, GPT-4.1 (and mini), GPT-4o (and mini)
+- **Anthropic**: Claude Opus 5.5, Claude Sonnet 5.5, Claude Fable 5.1, Claude Haiku 4.5
+- **Google Gemini**: Gemini 3.8 Flash, Gemini 3.7 Flash, Gemini 3.1 Pro (preview)
 
-- Users can view a searchable list of all available and installed models
-- Usage statistics and last-seen data help track model engagement
-- Tags indicate whether a model is installed locally or just available to pull
-- Status indicators show loading, pulling, or ready state in real time
+Local Ollama models remain available on servers that install them.
 
 ---
 
