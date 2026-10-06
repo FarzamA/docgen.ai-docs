@@ -17,7 +17,7 @@ It supports:
 
 - 🧠 **Multi-provider generative AI**: pick OpenAI, Anthropic or Google Gemini and any of their current models for docs, tests and Q&A
 - 🔑 **Bring your own key**: one key per provider, stored only in your browser and never saved or logged by the server
-- 📂 **Retrieval over your code**: repositories are chunked and embedded (pgvector) so answers cite the relevant files
+- 📂 **Retrieval over your code**: repositories are chunked and embedded (pgvector) so answers draw on the relevant code
 - 🧪 Unit test scaffolding for existing code
 - 👤 Instant guest sessions (unified sign-in through 4zam accounts is coming soon)
 - 🌐 A modern UI with dark and light modes

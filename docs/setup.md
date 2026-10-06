@@ -25,7 +25,9 @@ cp .env.example .env    # fill in POSTGRES_PASSWORD, SECRET_KEY, BASE_URL and CO
 docker compose -f docker-compose.prod.yml -p docgen up -d --build
 ```
 
-This launches PostgreSQL (pgvector), Redis, a CPU Ollama for embeddings, the FastAPI backend with its background workers plus a one-shot frontend build served by the host Caddy. Every service restarts automatically after a reboot.
+This launches PostgreSQL (pgvector), Redis, a CPU Ollama for embeddings, the FastAPI backend with its background workers plus a one-shot frontend build. The long-running services restart automatically once Docker starts on boot.
+
+Then install `deploy/docgen.caddy` into the host Caddy (validate, then reload) so it serves the built frontend and proxies the API, and check that `https://<host>/api/health` returns `{"status":"ok"}`.
 
 ## Environment variables
 
